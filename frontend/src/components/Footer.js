@@ -10,7 +10,7 @@ function Footer() {
         <div className="footer-left">
           <h2 className="logo"> WinHands</h2>
           <p>
-            Maximize your Amazon profits through our reimbursement recovery services. 
+            Maximize your Amazon profit through our reimbursement recovery services.
             Official Amazon Partner with enterprise-grade security.
           </p>
 
@@ -35,7 +35,7 @@ function Footer() {
           <a href="#services">1P Recovery</a>
         </div>
 
-        
+
         <div className="footer-section">
           <h4>Company</h4>
           <a href="#howitworks">How It Works</a>
