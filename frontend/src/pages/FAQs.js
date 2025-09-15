@@ -1,0 +1,13 @@
+import React from "react";
+import FAQ from "../components/FAQ"
+
+
+const FAQs = () => {
+  return (
+    <div>
+      <FAQ />
+    </div>
+  );
+};
+
+export default FAQs;

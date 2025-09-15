@@ -1,0 +1,217 @@
+
+.pricing-hero {
+  background: #0c0c1d;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+  font-size: 20px;
+  color: orange;
+  margin-bottom: 40px;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #11112c; 
+  padding: 30px 40px;
+  border-radius: 15px;
+  width: 380px;
+  height: 300px;
+  text-align: left;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.5);
+}
+
+.pricing-card1 {
+  background: #11112c; 
+  padding: 30px 40px;
+  border-radius: 15px;
+  height:200px;
+  width:380px;
+  margin-top: 100px;
+  text-align: left;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.5);
+}
+
+.pricing-percent {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #6a5acd;
+}
+
+.pricing-note {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-list li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.pricing-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4ade80; 
+}
+
+.pricing-btn {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #6a5acd;
+  border-radius: 25px;
+  background: transparent;
+  color: #6a5acd;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pricing-btn:hover {
+  background: #6a5acd;
+  color: white;
+}
+
+.pricing-badge {
+  display: inline-block;
+  background: #15803d;
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.pricing-ask {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: white;
+}
+
+.pricing-footer {
+  margin-top: 40px;
+}
+
+.learn-more {
+  color: #6a5acd;
+  text-decoration: underline;
+}
+
+.learn-more:hover {
+  color: #7b68ee;
+}
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+  .pricing-cards {
+    gap: 20px;
+  }
+
+  .pricing-card,
+  .pricing-card1 {
+    width: 320px;
+    height: auto;
+    padding: 25px 30px;
+  }
+
+  .pricing-title {
+    font-size: 2rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card,
+  .pricing-card1 {
+    width: 100%;
+    max-width: 90%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .pricing-card1 {
+    margin-top: 40px;
+  }
+
+  .pricing-title {
+    font-size: 1.8rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .pricing-percent {
+    font-size: 1.5rem;
+  }
+
+  .pricing-ask {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .pricing-hero {
+    padding: 40px 15px;
+  }
+
+  .pricing-title {
+    font-size: 1.5rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 14px;
+  }
+
+  .pricing-card,
+  .pricing-card1 {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .pricing-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .pricing-list li {
+    font-size: 0.85rem;
+  }
+}

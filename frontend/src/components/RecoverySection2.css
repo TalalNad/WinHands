@@ -1,0 +1,173 @@
+.recover-container {
+  text-align: center;
+  padding: 40px;
+  background: #0a0f1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.recover-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #1ec9ff;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #c0c6d6;
+  margin-bottom: 20px;
+}
+
+.tab-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tab {
+  background: #1c2338;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background: linear-gradient(90deg, #2ecbff, #477bff);
+  box-shadow: 0 0 10px #2ecbff;
+}
+
+.card-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔥 fixed: always 3 per row */
+  gap: 20px;
+}
+
+.recover-card {
+  background: #141b2d;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  min-height: 220px;
+}
+
+.recover-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(30, 201, 255, 0.25);
+}
+
+.recover-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.recover-card .desc {
+  font-size: 0.9rem;
+  color: #c0c6d6;
+  margin-bottom: 10px;
+}
+
+.recover-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.recover-card ul li {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #ddd;
+}
+
+/* ICON COLORS */
+.icon {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.icon.pink {
+  color: #ff4d94;
+}
+.icon.orange {
+  color: #ffa500;
+}
+.icon.green {
+  color: #00cc66;
+}
+.icon.purple {
+  color: #9b59ff;
+}
+.icon.blue {
+  color: #1ec9ff;
+}
+/* ============================= */
+/* 📱 Mobile (max-width: 600px) */
+/* ============================= */
+@media (max-width: 600px) {
+  .recover-container {
+    padding: 20px;
+  }
+
+  .recover-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 15px;
+  }
+
+  .recover-card {
+    padding: 15px;
+  }
+
+  .recover-card h3 {
+    font-size: 1rem;
+  }
+
+  .recover-card .desc,
+  .recover-card ul li {
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================= */
+/* 📱 Tablet (601px – 991px) */
+/* ============================= */
+@media (min-width: 601px) and (max-width: 991px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 20px;
+  }
+
+  .recover-container h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ============================= */
+/* 💻 Large Desktop (1200px +) */
+/* ============================= */
+@media (min-width: 1200px) {
+  .recover-container h2 {
+    font-size: 2.4rem;
+  }
+
+  .card-grid {
+    gap: 30px;
+  }
+}

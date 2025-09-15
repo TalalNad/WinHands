@@ -1,0 +1,305 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: #090e31;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-left {
+  max-width: 40%;
+}
+
+.hero-left h1 {
+  font-size: 45px;
+  font-weight: 750;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+.hero-left .up-front{
+  font-weight:bold;
+  color:orange;
+}
+.hero-left .highlight {
+  color: #3a8dff;
+}
+
+.hero-left p {
+  margin: 20px 0;
+  font-size: 16px;
+  color:  #cfd8e3;
+}
+
+.clients {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color:  #cfd8e3;
+}
+
+.checkmark {
+  color: #2ecc71;
+  margin-right: 8px;
+}
+
+.hero {
+  text-align: left;
+  padding: 100px 20px;
+  background: #0c0d2b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.hero-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: left;
+  gap: 20px; 
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 26px;
+  border-radius: 10px;
+  font-size: small;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+.explore-btn {
+  background: linear-gradient(90deg, #6a5af9, #4ba3f7);
+  color: white;
+}
+
+.explore-btn:hover {
+  background: #6a5af9;
+  color: white;
+}
+
+.get-started-btn {
+  border: 2px solid lightblue;
+  color: lightblue;
+  background: transparent;
+ 
+}
+
+.get-started-btn:hover {
+  opacity: 0.85;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}
+
+.dashboard {
+  background: #10142f;
+  border-radius: 25px;
+  padding: 24px;
+  width: 450px;
+  height: 500px;
+  box-shadow: 0 20px 30px rgba(239, 234, 234, 0.3);
+  border-color: lightblue;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h3 {
+  font-size: 18px;
+}
+
+.live-data {
+  color: #4ade80;
+  font-size: 14px;
+  border-radius: 8px;
+  border-color:  #4ade80;
+}
+
+.top-cards {
+  display: flex;
+  gap: 15px;
+ 
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  border-radius: 12px;
+  height: 110px;
+  width:fit-content;
+  padding: 15px;
+  color: #fff;
+}
+
+.green-card1 {
+  background: rgba(0, 255, 128, 0.1);
+  border: 1px solid #2ecc71;
+  text-align: center;
+}
+
+.purple-card1 {
+  background: rgba(138, 43, 226, 0.1);
+  border: 1px solid #8a2be2;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.section-title {
+  margin: 12px 0 8px;
+  font-size: 14px;
+}
+
+.section-title.purple5 {
+  color: #a855f7;
+  border:transparent;
+  font-size: 15px;
+}
+
+.section-title.blue7 {
+  color: #3b82f6;
+  border:transparent;
+  font-size: 15px;
+}
+
+.mini-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.mini-card {
+  flex: 1;
+  text-align: center;
+  padding: 30px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 4px;
+}
+
+.mini-card span {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.red {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid #e74c3c;
+}
+
+.yellow {
+  background: rgba(255, 255, 0, 0.1);
+  border: 1px solid #f1c40f;
+  color: #f1c40f;
+}
+
+.green9 {
+  background: rgba(0, 255, 128, 0.1);
+  border: 1px solid #2ecc71;
+}
+
+.blue7 {
+  background: rgba(0, 128, 255, 0.1);
+  border: 1px solid #3498db;
+}
+
+.purple5 {
+  background: rgba(138, 43, 226, 0.1);
+  border: 1px solid #8a2be2;
+}
+
+.violet8 {
+  background: rgba(186, 85, 211, 0.1);
+  border: 1px solid #ba55d3;
+}
+
+/* --- Responsive Styles --- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-right {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .dashboard {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .dashboard {
+    width: 100%;
+    border-radius: 18px;
+    padding: 16px;
+  }
+
+  .top-cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mini-cards {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .mini-card {
+    flex: 1 1 45%;
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+}

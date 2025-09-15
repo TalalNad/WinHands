@@ -1,0 +1,181 @@
+.revenue-section {
+  text-align: center;
+  background: #0a0d1c; /* dark navy background */
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.revenue-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.revenue-section .highlight {
+  color: #22c55e; /* green highlight */
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.revenue-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.revenue-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  background: #141829;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.revenue-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.revenue-card h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.revenue-card p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.revenue-card span {
+  font-weight: 600;
+  display: block;
+  margin-top: 5px;
+}
+
+.revenue-card small {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.revenue-card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* SCOPED COLORS */
+.revenue-red {
+  background: rgba(255, 99, 99, 0.15);
+  color: #ff4d4d;
+}
+
+.revenue-green {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+}
+
+.revenue-blue {
+  background: rgba(96, 165, 250, 0.15);
+  color: #60a5fa;
+}
+
+.revenue-orange {
+  background: rgba(251, 146, 60, 0.15);
+  color: #fb923c;
+}
+
+/* ================= Responsive Styles ================= */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .revenue-section h2 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .revenue-grid {
+    gap: 16px;
+  }
+
+  .revenue-card {
+    max-width: 240px;
+    padding: 18px;
+  }
+
+  .revenue-card h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .revenue-grid {
+    justify-content: center;
+  }
+
+  .revenue-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 100%;
+    min-width: 160px;
+  }
+
+  .revenue-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  .revenue-card h4 {
+    font-size: 1rem;
+  }
+
+  .revenue-card h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .revenue-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .revenue-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .revenue-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .revenue-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .revenue-card small {
+    font-size: 0.75rem;
+  }
+}

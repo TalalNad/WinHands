@@ -1,0 +1,232 @@
+.how-it-works {
+  text-align: center;
+  padding: 60px 40px;
+  background: #0c0c1d;
+  color: white;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.how-it-works h2 span {
+  color: #00c9c9;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #bbb;
+  max-width: 650px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.steps-container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.step-card1 {
+  background: #161633;
+  border-radius: 20px;
+  padding: 30px 20px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  max-width: 220px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.08); 
+}
+
+.step-card1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 201, 201, 0.4); 
+}
+
+.step-number1 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background: #00c9c9;
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+}
+
+.step-icon1 {
+  font-size: 2rem;
+  margin: 25px 0;
+  color: #00c9c9;
+}
+
+.step-card1 h3 {
+  font-size: 1.15rem;
+  margin: 12px 0;
+}
+
+.step-card1 p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.rec-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0b1d; 
+  height: 100vh;
+  padding: 20px;
+}
+
+.rec-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+.rec-card {
+  background: linear-gradient(180deg, #0d1133, #0a0b1d);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+  border: 1px solid rgba(138, 108, 241, 0.3);
+}
+
+.rec-card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.rec-card p {
+  font-size: 16px;
+  color: #d3d3d3;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #7d5fff, #4facfe);
+  color: white;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background: #2a2d3e;
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  transform: translateY(-3px);
+}
+
+.features {
+  margin: 20px 0;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #a5ffaf;
+}
+
+.description {
+  font-size: 14px;
+  color: #bbb;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 1024px) {
+
+  .rec-card {
+    max-width: 90%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+
+  .rec-container {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .rec-card {
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .rec-card h2 {
+    font-size: 22px;
+  }
+
+  .rec-card p {
+    font-size: 14px;
+  }
+
+  .button-group {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%; 
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+
+  .rec-card {
+    padding: 20px 15px;
+  }
+
+  .rec-card h2 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+}

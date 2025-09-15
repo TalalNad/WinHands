@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #0c0d2b;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Default Nav */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  margin: 0 35px;
+}
+
+.dropbtn {
+  cursor: pointer;
+  color: #cfd8e3;
+  font-weight: 500;
+  padding: 8px;
+  display: inline-block;
+}
+
+.dropbtn:hover {
+  color: #7c88f5;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0c0d2b;
+  min-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  color: #cfd8e3;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #1a1c3a;
+  color: #7c88f5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.dropdown-icon {
+  font-size: 1.1rem;
+  color: #7c88f5;
+}
+
+/* Nav Links */
+.nav-links a {
+  margin: 0 35px;
+  text-decoration: none;
+  color: #cfd8e3;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #7c88f5;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    z-index: 1100;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* hidden off screen */
+    height: 100%;
+    width: 250px;
+    background-color: #0c0d2b;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px 20px;
+    gap: 20px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    right: 0; /* slide in */
+  }
+
+  .nav-links a,
+  .dropbtn {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .dropdown-content {
+    position: static;
+    background: none;
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1rem;
+  }
+}

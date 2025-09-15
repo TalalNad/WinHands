@@ -1,0 +1,147 @@
+body {
+  background: #0c0c1d; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px; 
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo1 {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.back-home {
+  font-size: 1rem;
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.back-home:hover {
+  color: #ff9900;
+}
+.terms-container {
+   background: #11112c; 
+  color: white;
+  max-width: 600px;
+ margin: 0 auto; 
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.terms-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.last-updated {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #a77cff; }
+
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #eee;
+  line-height: 25px;
+}
+@media (max-width: 600px) {
+  .header1 {
+    flex-direction: column;
+    padding: 10px 20px;   /* reduce side padding */
+    gap: 10px;
+    text-align: center;
+  }
+
+  .logo1 {
+    font-size: 1.3rem;
+  }
+
+  .back-home {
+    font-size: 0.9rem;
+  }
+
+  .terms-container {
+    max-width: 100%;
+    padding: 20px;  /* reduce padding for small screens */
+  }
+
+  .terms-title {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 22px;
+  }
+}
+
+/* ============================= */
+/* 📱 Tablet (601px – 991px) */
+/* ============================= */
+@media (min-width: 601px) and (max-width: 991px) {
+  .header1 {
+    padding: 10px 50px; /* less padding than desktop */
+  }
+
+  .terms-container {
+    max-width: 90%;
+    padding: 30px;
+  }
+
+  .terms-title {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .terms-container {
+    max-width: 800px;
+  }
+}
